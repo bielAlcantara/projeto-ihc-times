@@ -97,11 +97,12 @@ section {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    transition: .3s;
 }
 
 .name-item {
     background-color: rgb(5, 241, 255);
-    height: 6vh;
+    height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -119,10 +120,63 @@ section {
 
 .logo-item > img {
     max-width: 50%;
-    transition: .3s;
+    transition: .4s;
 }
 
 .logo-item > img:hover {
     max-width: 65%;
     cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+
+    nav {
+        height: 100%;
+    }
+
+    .nav-container {
+        width: 100%;
+        display: block;
+    }
+
+    .item-esquerda {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+    }
+
+    a > img {
+        max-height: 150px;
+    }
+
+    .item-direita {
+        width: 100%;
+        height: 100%;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        transition: .3s;
+    }
+    
+    .menu-item {
+        padding: 20px;
+    }
+
+    section {
+        max-height: 200px;
+    }
+
+    .logo-item > img {
+        max-width: 40%;
+        transition: .3s;
+    }
+
+    .logo-item > img:hover {
+        max-width: 50%;
+        transition: .3s;
+    }
+    
 }
