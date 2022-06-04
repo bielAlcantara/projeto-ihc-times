@@ -1,0 +1,80 @@
+.main-container {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+form {
+    padding-top: 50px;
+    background-color: rgb(56, 0, 58);
+    width: 30vw;
+    min-width: 400px;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+form > div {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form  input {
+    width: 80%;
+    height: 40px;
+    color: rgb(5, 241, 255);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgb(5, 241, 255);
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+form  input::placeholder {
+    color: rgb(5, 241, 255);
+}
+
+button {
+    width: 80%;
+    height: 60px;
+    background-color: rgb(5, 241, 255);
+    color: rgb(56, 0, 58);
+    font-size: 1.3em;
+    outline: none;
+    border: none;
+    transition: .3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(5, 241, 255);
+    color: rgb(253, 0, 90);
+    border: 2px solid rgb(5, 241, 255);
+    box-shadow: 0 0 30px 3px rgba(253, 0, 90, 0.7);
+}
+
+.msg-entrar {
+    color: rgb(5, 241, 255);
+}
+
+p {
+    color: white;
+}
+
+.entrar {
+    text-decoration: underline;
+    color: rgba(253, 0, 90);
+}
+
+.entrar:hover {
+    cursor: pointer;
+}
