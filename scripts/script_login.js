@@ -26,7 +26,7 @@
                 
                 if(usuarioExiste) {
                     localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
-                    window.location.href = '../index.html'
+                    window.location.href = './index.html'
                 }
 
             }
@@ -41,6 +41,6 @@
     const linkCadastreSe = document.querySelector('.cadastre-se');
     if(linkCadastreSe) {
         linkCadastreSe.addEventListener('click', e => {
-            window.location.href = '../cadastro.html';
+            window.location.href = './cadastro.html';
         });
     }

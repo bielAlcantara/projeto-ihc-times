@@ -38,7 +38,7 @@
             if(!jaExisteEmail) { 
                 localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
                 localStorage.setItem('usuarios', JSON.stringify(usuarios));
-                window.location.href = '../index.html';
+                window.location.href = './index.html';
             }
 
         });
@@ -47,6 +47,6 @@
     const linkEntrar = document.querySelector('.entrar');
     if(linkEntrar) {
         linkEntrar.addEventListener('click', e => {
-            window.location.href = '../login.html';
+            window.location.href = './login.html';
         });
     }
