@@ -1,6 +1,6 @@
 
     if(localStorage.getItem('usuarioLogado')) {
-        window.location.href = '../index.html'
+        window.location.href = './index.html'
     }
 
     const txtEmail = document.querySelector('.email > input');
