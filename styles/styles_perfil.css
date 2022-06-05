@@ -71,7 +71,7 @@ section {
     color: white;
 }
 
-.perfil-label-email {
+.perfil-label-email, .perfil-apagar-conta {
     padding-top: 20px;
 }
 
@@ -85,4 +85,108 @@ section {
 
 .perfil-nome, .perfil-email {
     color: white;
+}
+
+.perfil-apagar-conta {
+    color: rgb(253, 0, 90);
+}
+
+.perfil-apagar-conta:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.back-modal {
+    display: none; 
+    position:absolute; 
+    top: 0; 
+    width: 100vw; 
+    height: 100vh; 
+    background-color: black; 
+    opacity: 0.7;
+}
+
+.modal {
+    display: none; 
+    position:absolute; 
+    color: white;
+    top: 25%; 
+    width: 300px; 
+    height: 200px; 
+    background-color: rgb(253, 0, 90);
+}
+
+.esconde {
+    transition: .5s;
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+.mostrar-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-column-center {
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.titulo-modal {
+
+}
+
+.opcoes {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.modal-btn {
+    border: none;
+    outline: none;
+    width: 40%;
+    height: 30px;
+}
+
+.modal-btn:hover {
+    cursor: pointer;
+    background-color: rgb(56, 0, 58);
+    color: rgb(5, 241, 255);
+    border: 1.5px solid white;
+    box-shadow: 0 0 30px 3px rgba(5, 241, 255, 0.5);
+}
+
+.sim:hover {
+    color: greenyellow;
+}
+
+.nao:hover {
+    color: red;
+}
+
+.msg-usuario-apagado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100px;
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(141, 226, 13);
+    color: black;
+    position: absolute;
+    transition: .5s;
+}
+
+.top-0 {
+    top: 0;
 }

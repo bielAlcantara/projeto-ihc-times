@@ -38,7 +38,14 @@
             if(!jaExisteEmail) { 
                 localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
                 localStorage.setItem('usuarios', JSON.stringify(usuarios));
-                window.location.href = './index.html';
+
+                const msgRetornoCadastrarUsuario = document.querySelector('.msg-usuario-cadastrado');
+
+                msgRetornoCadastrarUsuario.classList.add('top-0');
+
+                setTimeout(() => {
+                    window.location.href = './index.html';
+                }, 2000);
             }
 
         });
