@@ -3,19 +3,22 @@ main {
     height: 100%;
     display: flex;
     justify-content: center;
-}
-
-.main-container {
-    width: 80%;
-    background-color: transparent;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-body {
-    background-color: white;
+div > h1 {
+    margin: 20px;
+    text-transform: uppercase;
+    color: rgb(56, 0, 58);
+}
+
+.dados-conta {
+    padding: 20px;
+    background-color: rgb(56, 0, 58);
+    width: 30vw;
+    min-width: 400px;
+    overflow-wrap: break-word;
 }
 
 section {
@@ -31,7 +34,7 @@ section {
 .name-item {
     background-color: rgb(56, 0, 58);
     height: 50px;
-    width: 100%;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,20 +66,23 @@ section {
     cursor: pointer;
 }
 
-@media screen and (max-width: 720px) {
+.perfil-label-nome, .perfil-label-email {
+    padding-bottom: 5px;
+    color: white;
+}
 
-    section {
-        max-height: 200px;
-    }
+.perfil-label-email {
+    padding-top: 20px;
+}
 
-    .logo-item > img {
-        max-width: 40%;
-        transition: .3s;
-    }
+.times-favoritados {
+    max-width: 80vw;
+    display: flex;
+    overflow-x: auto;
+    min-width: 150px;
+    background-color: white;
+}
 
-    .logo-item > img:hover {
-        max-width: 50%;
-        transition: .3s;
-    }
-    
+.perfil-nome, .perfil-email {
+    color: white;
 }

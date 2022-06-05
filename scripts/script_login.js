@@ -22,10 +22,10 @@
 
             if(localStorage.getItem('usuarios')) {
                 const getUsuarios = JSON.parse(localStorage.getItem('usuarios'));
-                usuarioExiste = getUsuarios.some(u => u.email == usuario.email && u.senha == usuario.senha);
+                usuarioExiste = getUsuarios.find(u => u.email == usuario.email && u.senha == usuario.senha);
                 
                 if(usuarioExiste) {
-                    localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
+                    localStorage.setItem('usuarioLogado', JSON.stringify(usuarioExiste));
                     window.location.href = './index.html'
                 }
 

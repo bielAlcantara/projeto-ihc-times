@@ -11,7 +11,9 @@ window.onload = () => {
                     ${(!localStorage.getItem('usuarioLogado')) ? 
                     `<div class="menu-item item1">
                         <a href="#">Entrar</a>
-                    </div>`: 
+                    </div><div class="menu-item item5">
+                    <a href="#">Cadastrar</a>
+                </div>`: 
                     `<div class="menu-item item3">
                         <a href="#">Minha Conta</a>
                     </div>`}
@@ -46,7 +48,7 @@ window.onload = () => {
     const menuItemMinhaConta = document.querySelector('.item3');
     if(menuItemMinhaConta) {
         menuItemMinhaConta.addEventListener('click', e => {
-            window.location.href = './ranking.html';
+            window.location.href = './perfil.html';
         });
     }
 
@@ -57,6 +59,14 @@ window.onload = () => {
             localStorage.removeItem('usuarioLogado')
 
             window.location.href = './index.html';
+        });
+    }
+
+    const menuItemCadastrar = document.querySelector('.item5');
+
+    if(menuItemCadastrar) {
+        menuItemCadastrar.addEventListener('click', e => {
+            window.location.href = './cadastro.html';
         });
     }
 

@@ -1,0 +1,122 @@
+[
+    {
+        "name":"Arsenal",
+        "logo":"images/arsenal.png",
+        "alt":"",
+        "stars": "12345"
+    },
+    {
+        "name":"Aston Villa",
+        "logo":"images/aston-villa.webp",
+        "alt":"",
+        "stars": "12345"
+    },
+    {
+        "name":"Brentford",
+        "logo":"images/brentford.webp",
+        "alt":"",
+        "stars": "12344"
+    },
+    {
+        "name":"Brighton",
+        "logo":"images/brigthon.webp",
+        "alt":"",
+        "stars": "1345"
+    },
+    {
+        "name":"Burnley",
+        "logo":"images/burnley.webp",
+        "alt":"",
+        "stars": "145"
+    },
+    {
+        "name":"Chelsea",
+        "logo":"images/chelsea.png",
+        "alt":"",
+        "stars": "15345"
+    },
+    {
+        "name":"Crystal Palace",
+        "logo":"images/crystal-palace.webp",
+        "alt":"",
+        "stars": "1245"
+    },
+    {
+        "name":"Everton",
+        "logo":"images/everton.webp",
+        "alt":"",
+        "stars": "1235"
+    },
+    {
+        "name":"Leeds United",
+        "logo":"images/leeds-united.webp",
+        "alt":"",
+        "stars": "2345"
+    },
+    {
+        "name":"Leicester City",
+        "logo":"images/leicester.webp",
+        "alt":"",
+        "stars": "1345"
+    },
+    {
+        "name":"Liverpool",
+        "logo":"images/liverpool.webp",
+        "alt":"",
+        "stars": "50345"
+    },
+    {
+        "name":"Manchester City",
+        "logo":"images/man-city.png",
+        "alt":"",
+        "stars": "50345"
+    },
+    {
+        "name":"Manchester United",
+        "logo":"images/man-united.png",
+        "alt":"",
+        "stars": "32345"
+    },
+    {
+        "name":"Newcastle United",
+        "logo":"images/newcastle.webp",
+        "alt":"",
+        "stars": "22345"
+    },
+    {
+        "name":"Norwich City",
+        "logo":"images/norwich.webp",
+        "alt":"",
+        "stars": "15"
+    },
+    {
+        "name":"Southampton",
+        "logo":"images/southhampton.webp",
+        "alt":"",
+        "stars": "145"
+    },
+    {
+        "name":"Tottenham Hotspur",
+        "logo":"images/spurs.png",
+        "alt":"",
+        "stars": "27345"
+    },
+    {
+        "name":"Watford",
+        "logo":"images/watford.webp",
+        "alt":"",
+        "stars": "245"
+    },
+    {
+        "name":"West ham",
+        "logo":"images/west-ham.webp",
+        "alt":"",
+        "stars": "9345"
+    },
+    {
+        "name":"Wolverhampton",
+        "logo":"images/wolves.webp",
+        "alt":"",
+        "stars": "10345"
+    }
+]

@@ -30,40 +30,46 @@ form > div {
 form  input {
     width: 80%;
     height: 40px;
-    color: rgb(5, 241, 255);
+    color: white;
     background-color: transparent;
     outline: none;
     border: none;
-    border-bottom: 3px solid rgb(5, 241, 255);
+    border-bottom: 1.5px solid white;
     padding: 5px;
     font-size: 1.1em;
 }
 
+form input:focus {
+    border-bottom: 1.5px solid rgb(5, 241, 255);
+}
+
+
 form  input::placeholder {
-    color: rgb(5, 241, 255);
+    color: white;
 }
 
 button {
     width: 80%;
     height: 60px;
-    background-color: rgb(5, 241, 255);
+    background-color: white;
     color: rgb(56, 0, 58);
     font-size: 1.3em;
     outline: none;
     border: none;
-    transition: .3s;
+    transition: .50s;
+    border: 1.5px solid white;
 }
 
-button:hover {
+button:hover, button:focus {
     cursor: pointer;
-    background-color: rgb(5, 241, 255);
-    color: rgb(253, 0, 90);
-    border: 2px solid rgb(5, 241, 255);
-    box-shadow: 0 0 30px 3px rgba(253, 0, 90, 0.7);
+    background-color: rgb(56, 0, 58);
+    color: rgb(5, 241, 255);
+    border: 1.5px solid white;
+    box-shadow: 0 0 30px 3px rgba(5, 241, 255, 0.5);
 }
 
 .msg-entrar {
-    color: rgb(5, 241, 255);
+    color: white;
 }
 
 p {
@@ -73,8 +79,10 @@ p {
 .entrar {
     text-decoration: underline;
     color: rgba(253, 0, 90);
+    transition: .3s;
 }
 
 .entrar:hover {
     cursor: pointer;
+    color: rgb(5, 241, 255);
 }
