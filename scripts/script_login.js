@@ -13,10 +13,6 @@
 
     txtEmail.focus();
 
-    if(button.disabled) {
-        button.classList.add('button-disabled');
-    }
-
     button.addEventListener('mouseover', e => {
         if(!button.disabled) {
             button.classList.add('button-hover');
