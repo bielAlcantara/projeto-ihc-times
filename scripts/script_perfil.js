@@ -54,16 +54,22 @@ fetch('../times.json').then(times => times.json()).then(times => {
     const divPerfilEmail = document.querySelector('.perfil-email');
     
     const indexArroba = usuarioLogado.email.indexOf('@'); 
-    const primeiraParteEmail = usuarioLogado.email.substring(3, indexArroba + 1);
-    const letrasEscondidas = primeiraParteEmail.split('').reduce((total, letra) => total + '*', '');
-    const segundaParteEmail = usuarioLogado.email.substring(indexArroba);
-    const primeirasLetrasEmail = usuarioLogado.email.substring(0, 3);
-    const emailEscondido = primeirasLetrasEmail +  letrasEscondidas + segundaParteEmail;
+
+    let emailEscondido;
+
+    if(usuarioLogado.email.substring(0, indexArroba).length < 4) {
+
+        emailEscondido = usuarioLogado.email.substring(0, indexArroba).split('').reduce((total, letra) => total + '*', '') + usuarioLogado.email.substring(indexArroba);
+    } else {
+        const primeiraParteEmail = usuarioLogado.email.substring(3, indexArroba);
+        const letrasEscondidas = primeiraParteEmail.split('').reduce((total, letra) => total + '*', '');
+        const segundaParteEmail = usuarioLogado.email.substring(indexArroba);
+        const primeirasLetrasEmail = usuarioLogado.email.substring(0, 3);
+        emailEscondido = primeirasLetrasEmail +  letrasEscondidas + segundaParteEmail;
+    }
 
     divPerfilNome.append(usuarioLogado.nome);
     divPerfilEmail.append(emailEscondido);
-
-    console.log(timesFavoritados)
 
     times = times.filter(t => timesFavoritados.includes(t.name));
 
@@ -101,8 +107,6 @@ fetch('../times.json').then(times => times.json()).then(times => {
 
             section.appendChild(divNameItem);
             section.appendChild(divLogoItem);
-
-            console.log(section)
 
             divTimesFavoritados.appendChild(section);
         });

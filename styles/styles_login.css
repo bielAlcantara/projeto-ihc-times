@@ -17,6 +17,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    box-shadow: 0 0 50px 3px rgba(56, 0, 58, 0.2);
 }
 
 form > div {
@@ -39,6 +40,37 @@ form  input {
     font-size: 1.1em;
 }
 
+.border-bottom-red {
+    border-bottom: 1.5px solid red;
+}
+
+.border-bottom-white {
+    border-bottom: 1.5px solid white;
+}
+
+.email, .password {
+    display: flex; 
+    flex-direction: column;
+}
+
+.erro-input {
+    padding-top: 0.2rem;
+    height: 50px;
+    color: red;
+    visibility: visible;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mostrar {
+    visibility: visible;
+}
+
+.esconder {
+    visibility: hidden;
+}
+
 .login {
     color: white;
     text-transform: uppercase;
@@ -49,7 +81,7 @@ form input:focus {
     border-bottom: 1.5px solid rgb(5, 241, 255);
 }
 
-form  input::placeholder {
+form input::placeholder {
     color: white;
 }
 
@@ -65,7 +97,12 @@ button {
     border: 1.5px solid white;
 }
 
-button:hover, button:focus {
+.button-disabled {
+    background-color: gray;
+    color: rgba(56, 0, 58, 0.5);
+}
+
+.button-hover {
     cursor: pointer;
     background-color: rgb(56, 0, 58);
     color: rgb(5, 241, 255);

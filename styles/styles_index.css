@@ -68,7 +68,7 @@ nav {
     top: 0;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1520px) {
 
     section {
         max-height: 200px;
