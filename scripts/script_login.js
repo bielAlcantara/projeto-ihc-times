@@ -1,3 +1,5 @@
+let emailValido = false;
+let senhaValida = false;
 
     if(localStorage.getItem('usuarioLogado')) {
         window.location.href = './index.html'
@@ -10,8 +12,6 @@
     
     let validosEmail = 0;
     let validosSenha = 0;
-
-    txtEmail.focus();
 
     button.addEventListener('mouseover', e => {
         if(!button.disabled) {
@@ -44,14 +44,15 @@
     txtEmail.addEventListener('blur', e => {
         const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-        console.log(txtEmail.value == '')
-
         if(!txtEmail.value) {
             errosInputs[0].innerHTML = 'preencha o e-mail';
             if(errosInputs[0].classList.contains('esconder')) errosInputs[0].classList.remove('esconder');
             if(txtEmail.classList.contains('border-bottom-white')) txtEmail.classList.remove('border-bottom-white');
             errosInputs[0].classList.add('mostrar');
             txtEmail.classList.add('border-bottom-red');
+            button.disabled = true;
+            button.classList.add('button-disabled')
+            emailValido = false;
             return;
         } 
 
@@ -61,16 +62,37 @@
             if(txtEmail.classList.contains('border-bottom-white')) txtEmail.classList.remove('border-bottom-white');
             errosInputs[0].classList.add('mostrar');
             txtEmail.classList.add('border-bottom-red');
+            button.disabled = true;
+            button.classList.add('button-disabled')
+            emailValido = false;
             return;
         } 
         
         txtEmail.classList.add('border-bottom-white');
         errosInputs[0].classList.add('esconder');
+        emailValido = true;
         validosEmail = 1;
 
         if(validosEmail + validosSenha == 2) {
             button.disabled = false;
             button.classList.remove('button-disabled')
+        }
+    });
+    
+    txtEmail.addEventListener('focus', e => {
+        txtEmail.classList.add('border-bottom-white');
+        errosInputs[0].classList.add('esconder');
+    })
+
+    txtEmail.addEventListener('keyup', e => {
+        const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if(regex.test(txtEmail.value) && senhaValida) {
+            button.disabled = false;
+            button.classList.remove('button-disabled')
+        } else {
+            button.disabled = true;
+            button.classList.add('button-disabled')
         }
     });
 
@@ -81,18 +103,36 @@
             if(txtPassword.classList.contains('border-bottom-white')) txtPassword.classList.remove('border-bottom-white');
             errosInputs[1].classList.add('mostrar');
             txtPassword.classList.add('border-bottom-red');
+            button.disabled = true;
+            button.classList.add('button-disabled')
             return;
         }
 
         txtPassword.classList.add('border-bottom-white');
         errosInputs[1].classList.add('esconder');
+        senhaValida = true;
         validosSenha = 1;
 
         if(validosEmail + validosSenha == 2) {
             button.disabled = false;
             button.classList.remove('button-disabled')
-        }
+        } 
     });
+
+    txtPassword.addEventListener('focus', e => {
+        txtPassword.classList.add('border-bottom-white');
+        errosInputs[1].classList.add('esconder');
+    })
+
+    txtPassword.addEventListener('keyup', e => {
+        if(txtPassword.value && emailValido) {
+            button.disabled = false;
+            button.classList.remove('button-disabled')
+        } else {
+            button.disabled = true;
+            button.classList.add('button-disabled')
+        }
+    })
 
     const buttonForm = document.querySelector('button');
     if(buttonForm) {
