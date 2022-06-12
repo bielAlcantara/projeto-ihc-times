@@ -53,6 +53,14 @@ form  input {
     flex-direction: column;
 }
 
+.label-form {
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
 .erro-input {
     padding-top: 0.2rem;
     height: 50px;
@@ -79,10 +87,6 @@ form  input {
 
 form input:focus {
     border-bottom: 1.5px solid rgb(5, 241, 255);
-}
-
-form input::placeholder {
-    color: white;
 }
 
 button {
