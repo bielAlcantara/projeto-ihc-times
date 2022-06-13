@@ -3,11 +3,11 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100px;
+    height: 6.25rem;
     color: white;
     background-color: rgb(255, 94, 0);
     position: absolute;
-    top: -100px;
+    top: -6.25rem;
     transition: top .5s;
 }
 
@@ -17,7 +17,7 @@
 
 .main-container {
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 5rem);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,16 +25,16 @@
 }
 
 form {
-    padding-top: 50px;
+    padding-top: 3.125rem;
     background-color: rgb(56, 0, 58);
     width: 30vw;
-    min-width: 400px;
+    min-width: 25rem;
     height: 50vh;
-    min-height: 400px;
+    min-height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    box-shadow: 0 0 50px 3px rgba(56, 0, 58, 0.2);
+    box-shadow: 0 0 3.125rem 0.188rem rgba(56, 0, 58, 0.2);
 }
 
 form > div {
@@ -47,22 +47,22 @@ form > div {
 
 form  input {
     width: 80%;
-    height: 40px;
+    height: 2.5rem;
     color: white;
     background-color: transparent;
     outline: none;
     border: none;
-    border-bottom: 1.5px solid white;
+    border-bottom: 0.094rem solid white;
     padding: 0.30rem 0;
     font-size: 1.1em;
 }
 
 .border-bottom-red {
-    border-bottom: 1.5px solid red;
+    border-bottom: 0.094rem solid red;
 }
 
 .border-bottom-white {
-    border-bottom: 1.5px solid white;
+    border-bottom: 0.094rem solid white;
 }
 
 .email, .password {
@@ -80,7 +80,7 @@ form  input {
 
 .erro-input {
     padding-top: 0.2rem;
-    height: 50px;
+    height: 3.125rem;
     color: red;
     visibility: visible;
     width: 80%;
@@ -103,19 +103,19 @@ form  input {
 }
 
 form input:focus {
-    border-bottom: 1.5px solid rgb(5, 241, 255);
+    border-bottom: 0.094rem solid rgb(5, 241, 255);
 }
 
 button {
     width: 80%;
-    height: 60px;
+    height: 3.75rem;
     background-color: white;
     color: rgb(56, 0, 58);
     font-size: 1.3em;
     outline: none;
     border: none;
     transition: .50s;
-    border: 1.5px solid white;
+    border: 0.094rem solid white;
 }
 
 .button-disabled {
@@ -127,8 +127,8 @@ button {
     cursor: pointer;
     background-color: rgb(56, 0, 58);
     color: rgb(5, 241, 255);
-    border: 1.5px solid white;
-    box-shadow: 0 0 30px 3px rgba(5, 241, 255, 0.5);
+    border: 0.094rem solid white;
+    box-shadow: 0 0 1.875rem 0.188rem rgba(5, 241, 255, 0.5);
 }
 
 .msg-cadastro {

@@ -9,7 +9,7 @@
 }
 
 nav {
-    height: 80px;
+    height: 5rem;
     display: flex;
     justify-content: center;
     background-color: rgb(253, 0, 90);
@@ -33,7 +33,7 @@ nav {
 }
 
 .item-esquerda:hover {
-    padding-left: 20px;
+    padding-left: 1.25rem;
     width: 120%;
     background-color: rgb(5, 241, 255);
 }
@@ -69,7 +69,7 @@ a {
 }
 
 a > img {
-    max-height: 180px;
+    max-height: 11.25rem;
 }
 
 @media screen and (max-width: 1528px) {
@@ -93,7 +93,7 @@ a > img {
     }
 
     a > img {
-        max-height: 150px;
+        max-height: 9.375rem;
     }
 
     .item-direita {
@@ -106,7 +106,7 @@ a > img {
     }
     
     .menu-item {
-        padding: 20px;
+        padding: 1.25rem;
     }
 
 }

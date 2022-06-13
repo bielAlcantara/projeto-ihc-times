@@ -8,33 +8,33 @@ main {
 }
 
 div > h1 {
-    margin: 20px;
+    margin: 1.25rem;
     text-transform: uppercase;
     color: rgb(56, 0, 58);
 }
 
 .dados-conta {
-    padding: 20px;
+    padding: 1.25rem;
     background-color: rgb(56, 0, 58);
     width: 30vw;
-    min-width: 400px;
+    min-width: 25rem;
     overflow-wrap: break-word;
 }
 
 section {
-    margin: 20px;
-    width: 300px;
-    height: 300px;
+    margin: 1.25rem;
+    width: 18.75rem;
+    height: 18.75rem;
     display: flex;
     flex-direction: column;
     transition: .3s;
-    box-shadow: 0 0 50px 3px rgba(56, 0, 58, 0.2);
+    box-shadow: 0 0 3.125rem 0.188rem rgba(56, 0, 58, 0.2);
 }
 
 .name-item {
     background-color: rgb(56, 0, 58);
-    height: 50px;
-    width: 300px;
+    height: 3.125rem;
+    width: 18.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,19 +67,20 @@ section {
 }
 
 .perfil-label-nome, .perfil-label-email {
-    padding-bottom: 5px;
+    padding-bottom: 0.313rem;
     color: white;
+    font-size: 1.25rem;
 }
 
 .perfil-label-email, .perfil-apagar-conta {
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 .times-favoritados {
     max-width: 80vw;
     display: flex;
     overflow-x: auto;
-    min-width: 150px;
+    min-width: 13.125rem;
     background-color: white;
 }
 
@@ -111,8 +112,8 @@ section {
     position:absolute; 
     color: white;
     top: 40%; 
-    width: 300px; 
-    height: 200px; 
+    width: 18.75rem; 
+    height: 12.5rem; 
     background-color: rgb(253, 0, 90);   
 }
 
@@ -136,7 +137,7 @@ section {
 .flex-column-center {
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 0.313rem;
 }
 
 .titulo-modal {
@@ -147,22 +148,22 @@ section {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .modal-btn {
     border: none;
     outline: none;
     width: 40%;
-    height: 30px;
+    height: 1.875rem;
 }
 
 .modal-btn:hover {
     cursor: pointer;
     background-color: rgb(56, 0, 58);
     color: rgb(5, 241, 255);
-    border: 1.5px solid white;
-    box-shadow: 0 0 30px 3px rgba(5, 241, 255, 0.5);
+    border: 1.0.313rem solid white;
+    box-shadow: 0 0 1.875rem 0.188rem rgba(5, 241, 255, 0.5);
 }
 
 .sim:hover {
@@ -178,9 +179,9 @@ section {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: -100px;
+    top: -6.25rem;
     width: 100vw;
-    height: 100px;
+    height: 6.25rem;
     background-color: rgb(141, 226, 13);
     color: black;
     position: absolute;

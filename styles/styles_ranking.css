@@ -8,7 +8,7 @@ main {
 }
 
 div > h1 {
-    margin: 20px;
+    margin: 1.25rem;
     text-transform: uppercase;
     color: rgb(56, 0, 58);
 }
@@ -23,19 +23,19 @@ div > h1 {
 }
 
 section {
-    margin: 20px;
-    width: 500px;
-    height: 400px;
+    margin: 1.25rem;
+    width: 31.25rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     transition: .3s;
-    box-shadow: 0 0 50px 3px rgba(56, 0, 58, 0.2);
-    min-width: 300px;
+    box-shadow: 0 0 3.125rem 0.188rem rgba(56, 0, 58, 0.2);
+    min-width: 18.75rem;
 }
 
 .name-item {
     background-color: rgb(56, 0, 58);
-    height: 70px;
+    height: 4.375rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -45,22 +45,22 @@ section {
 }
 
 div > section:first-child {
-    box-shadow: 0 0 50px 10px rgba(255, 223, 0, 0.5);
+    box-shadow: 0 0 3.125rem 0.625rem rgba(255, 223, 0, 0.5);
 }
 
 div > section:first-child > .name-item {
-    border: 3px solid rgba(255, 223, 0);
+    border: 0.188rem solid rgba(255, 223, 0);
 }
 
 div > section:first-child > .logo-item {
-    border-right: 3px solid rgba(255, 223, 0);
-    border-left: 3px solid rgba(255, 223, 0);
+    border-right: 0.188rem solid rgba(255, 223, 0);
+    border-left: 0.188rem solid rgba(255, 223, 0);
 }
 
 div > section:first-child > .star-item {
-    border-right: 3px solid rgba(255, 223, 0);
-    border-left: 3px solid rgba(255, 223, 0);
-    border-bottom: 3px solid rgba(255, 223, 0);
+    border-right: 0.188rem solid rgba(255, 223, 0);
+    border-left: 0.188rem solid rgba(255, 223, 0);
+    border-bottom: 0.188rem solid rgba(255, 223, 0);
 }
 
 .bg-gold {
@@ -74,7 +74,7 @@ div > section:first-child > .star-item {
 
 .logo-item {
     background-color: white;
-    height: 400px;
+    height: 25rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -98,15 +98,15 @@ div > section:first-child > .star-item {
 
 .star-item {
     display: flex;
-    height: 60px;
+    height: 3.75rem;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
     transition: .3s;
 }
 
 .star-img {
-    margin-right: 5px;
+    margin-right: 0.313rem;
     max-width: 12%;
     opacity: 0.4;
 }
