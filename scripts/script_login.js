@@ -163,7 +163,7 @@ let senhaValida = false;
 
                 setTimeout(() =>{
                     divMsgUsuarioNaoEncontrado.classList.remove('top-0');
-                }, 2000);
+                }, 2500);
             }
 
         });
