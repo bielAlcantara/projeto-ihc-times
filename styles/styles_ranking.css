@@ -48,6 +48,21 @@ div > section:first-child {
     box-shadow: 0 0 50px 10px rgba(255, 223, 0, 0.5);
 }
 
+div > section:first-child > .name-item {
+    border: 3px solid rgba(255, 223, 0);
+}
+
+div > section:first-child > .logo-item {
+    border-right: 3px solid rgba(255, 223, 0);
+    border-left: 3px solid rgba(255, 223, 0);
+}
+
+div > section:first-child > .star-item {
+    border-right: 3px solid rgba(255, 223, 0);
+    border-left: 3px solid rgba(255, 223, 0);
+    border-bottom: 3px solid rgba(255, 223, 0);
+}
+
 .bg-gold {
     background-color: rgba(255, 223, 0);
 }

@@ -35,9 +35,48 @@ form input {
     outline: none;
     border: none;
     border-bottom: 1.5px solid white;
-    padding: 5px;
+    padding: 0.30rem 0;
     font-size: 1.1em;
     box-shadow: 0 0 50px 3px rgba(56, 0, 58, 0.2);
+}
+
+.border-bottom-red {
+    border-bottom: 1.5px solid red;
+}
+
+.border-bottom-white {
+    border-bottom: 1.5px solid white;
+}
+
+.nome, .email, .password {
+    display: flex; 
+    flex-direction: column;
+}
+
+.label-form {
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.erro-input {
+    padding-top: 0.2rem;
+    height: 50px;
+    color: red;
+    visibility: visible;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mostrar {
+    visibility: visible;
+}
+
+.esconder {
+    visibility: hidden;
 }
 
 form input:focus {
@@ -61,7 +100,12 @@ button {
     border: 1.5px solid white;
 }
 
-button:hover, button:focus {
+.button-disabled {
+    background-color: gray;
+    color: rgba(56, 0, 58, 0.5);
+}
+
+.button-hover {
     cursor: pointer;
     background-color: rgb(56, 0, 58);
     color: rgb(5, 241, 255);
@@ -99,7 +143,21 @@ p {
     background-color: rgb(141, 226, 13);
     color: black;
     position: absolute;
-    transition: .5s;
+    transition: top .5s;
+}
+
+.msg-email-indisponivel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -200px;
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    position: absolute;
+    transition: top .5s;
 }
 
 .top-0 {

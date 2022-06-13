@@ -158,7 +158,12 @@ let senhaValida = false;
             }
 
             if(!usuarioExiste) {
-                alert('O usuário não foi encontrado');
+                const divMsgUsuarioNaoEncontrado = document.querySelector('.msg-usuario-nao-encontrado');
+                divMsgUsuarioNaoEncontrado.classList.add('top-0');
+
+                setTimeout(() =>{
+                    divMsgUsuarioNaoEncontrado.classList.remove('top-0');
+                }, 2000);
             }
 
         });
