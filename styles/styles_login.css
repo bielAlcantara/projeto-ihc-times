@@ -6,15 +6,6 @@
     border-bottom: 0.313rem solid rgb(56, 0, 58);
 }
 
-@media screen and (max-width: 1528px) {
-
-    .item1 {
-        border: 0.313rem solid transparent;
-        background-color: rgb(206, 17, 83);
-    }
-
-}
-
 .msg-usuario-nao-encontrado {
     display: flex;
     justify-content: center;
@@ -26,6 +17,19 @@
     position: absolute;
     top: -6.25rem;
     transition: top .5s;
+}
+
+@media screen and (max-width: 1528px) {
+
+    .item1 {
+        border: 0.313rem solid transparent;
+        background-color: rgb(206, 17, 83);
+    }
+
+    .msg-usuario-nao-encontrado {
+        position: fixed;
+    }
+
 }
 
 .top-0 {
@@ -172,4 +176,4 @@ p {
 .cadastre-se:hover {
     cursor: pointer;
     color: rgb(5, 241, 255);
-};
+}

@@ -6,8 +6,14 @@
     border-bottom: 0.313rem solid rgb(56, 0, 58);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-container {
-    width: 100vw;
+    width: 80vw;  
     position: relative;
     top: 7rem;
     display: flex;
@@ -163,7 +169,7 @@ p {
     position: absolute;
     top: -12.5rem;
     width: 100vw;
-    height: 12.5rem;
+    height: 6.25rem;
     background-color: rgb(255, 94, 0);
     color: white;
     position: absolute;
@@ -179,6 +185,10 @@ p {
     .item5 {
         border-bottom: 0.313rem solid transparent;
         background-color: rgb(206, 17, 83);
+    }
+
+    .msg-usuario-cadastrado, .msg-email-indisponivel {
+        position: fixed;
     }
 
 }

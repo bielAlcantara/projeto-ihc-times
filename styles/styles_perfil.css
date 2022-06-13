@@ -90,6 +90,7 @@ section {
     overflow-x: auto;
     min-width: 13.125rem;
     background-color: white;
+    margin-bottom: 1.2rem;
 }
 
 .perfil-nome, .perfil-email {
@@ -113,6 +114,7 @@ section {
     height: 100vh; 
     background-color: black; 
     opacity: 0.9;
+    overflow: hidden;
 }
 
 .modal {
@@ -146,10 +148,6 @@ section {
     justify-content: center;
     align-items: center;
     padding: 0.313rem;
-}
-
-.titulo-modal {
-
 }
 
 .opcoes {
@@ -205,6 +203,10 @@ section {
     .item3 {
         border-bottom: 0.313rem solid transparent;
         background-color: rgb(206, 17, 83);
+    }
+
+    .msg-usuario-apagado {
+        position: fixed;
     }
 
 }
