@@ -71,11 +71,11 @@ fetch('../times.json').then(times => times.json()).then(times => {
     divPerfilNome.append(usuarioLogado.nome);
     divPerfilEmail.append(emailEscondido);
 
-    times = times.filter(t => timesFavoritados.includes(t.name));
+    if(timesFavoritados) times = times.filter(t => timesFavoritados.includes(t.name));
 
     divTimesFavoritados.innerHTML = '';
 
-    if(!times.length) {
+    if(!timesFavoritados || !times.length) {
 
         divTimesFavoritados.append('Não há times favoritados');
 
