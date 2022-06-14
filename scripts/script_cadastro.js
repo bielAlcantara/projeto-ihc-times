@@ -47,7 +47,7 @@ let senhaValida = false;
     txtNome.addEventListener('blur', e => {
         const regex = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
 
-        if(!txtNome.value) {
+        if(!txtNome.value.trim()) {
             errosInputs[0].innerHTML = 'preencha o nome';
             if(errosInputs[0].classList.contains('esconder')) errosInputs[0].classList.remove('esconder');
             if(txtNome.classList.contains('border-bottom-white')) txtNome.classList.remove('border-bottom-white');
@@ -59,7 +59,7 @@ let senhaValida = false;
             return;
         } 
 
-        if(!regex.test(txtNome.value)) {
+        if(!regex.test(txtNome.value.trim())) {
             errosInputs[0].innerHTML = 'nome inválido';
             if(errosInputs[0].classList.contains('esconder')) errosInputs[0].classList.remove('esconder');
             if(txtNome.classList.contains('border-bottom-white')) txtNome.classList.remove('border-bottom-white');
@@ -90,7 +90,7 @@ let senhaValida = false;
     txtNome.addEventListener('keyup', e => {
         const regex = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
 
-        if(regex.test(txtNome.value) && emailValido && senhaValida) {
+        if(regex.test(txtNome.value.trim()) && emailValido && senhaValida) {
             button.disabled = false;
             button.classList.remove('button-disabled')
         } else {
@@ -102,7 +102,7 @@ let senhaValida = false;
     txtEmail.addEventListener('blur', e => {
         const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-        if(!txtEmail.value) {
+        if(!txtEmail.value.trim()) {
             errosInputs[1].innerHTML = 'preencha o e-mail';
             if(errosInputs[1].classList.contains('esconder')) errosInputs[1].classList.remove('esconder');
             if(txtEmail.classList.contains('border-bottom-white')) txtEmail.classList.remove('border-bottom-white');
@@ -114,7 +114,7 @@ let senhaValida = false;
             return;
         } 
 
-        if(!regex.test(txtEmail.value)) {
+        if(!regex.test(txtEmail.value.trim())) {
             errosInputs[1].innerHTML = 'e-mail inválido';
             if(errosInputs[1].classList.contains('esconder')) errosInputs[1].classList.remove('esconder');
             if(txtEmail.classList.contains('border-bottom-white')) txtEmail.classList.remove('border-bottom-white');
@@ -145,7 +145,7 @@ let senhaValida = false;
     txtEmail.addEventListener('keyup', e => {
         const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-        if(nomeValido && regex.test(txtEmail.value) && senhaValida) {
+        if(nomeValido && regex.test(txtEmail.value.trim()) && senhaValida) {
             button.disabled = false;
             button.classList.remove('button-disabled')
         } else {
@@ -155,7 +155,7 @@ let senhaValida = false;
     });
 
     txtPassword.addEventListener('blur', e => {
-        if(!txtPassword.value) {
+        if(!txtPassword.value.trim()) {
             errosInputs[2].innerHTML = 'preencha a senha';
             if(errosInputs[2].classList.contains('esconder')) errosInputs[2].classList.remove('esconder');
             if(txtPassword.classList.contains('border-bottom-white')) txtPassword.classList.remove('border-bottom-white');
@@ -183,7 +183,7 @@ let senhaValida = false;
     })
 
     txtPassword.addEventListener('keyup', e => {
-        if(nomeValido && txtPassword.value && emailValido) {
+        if(nomeValido && txtPassword.value.trim() && emailValido) {
             button.disabled = false;
             button.classList.remove('button-disabled')
         } else {
@@ -198,9 +198,9 @@ let senhaValida = false;
             e.preventDefault();
 
             const usuario = {
-                nome: txtNome.value,
-                email: txtEmail.value,
-                senha: txtPassword.value
+                nome: txtNome.value.trim(),
+                email: txtEmail.value.trim(),
+                senha: txtPassword.value.trim()
             };
 
             let usuarios;

@@ -44,7 +44,7 @@ let senhaValida = false;
     txtEmail.addEventListener('blur', e => {
         const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-        if(!txtEmail.value) {
+        if(!txtEmail.value.trim()) {
             errosInputs[0].innerHTML = 'preencha o e-mail';
             if(errosInputs[0].classList.contains('esconder')) errosInputs[0].classList.remove('esconder');
             if(txtEmail.classList.contains('border-bottom-white')) txtEmail.classList.remove('border-bottom-white');
@@ -56,7 +56,7 @@ let senhaValida = false;
             return;
         } 
 
-        if(!regex.test(txtEmail.value)) {
+        if(!regex.test(txtEmail.value.trim())) {
             errosInputs[0].innerHTML = 'e-mail inválido';
             if(errosInputs[0].classList.contains('esconder')) errosInputs[0].classList.remove('esconder');
             if(txtEmail.classList.contains('border-bottom-white')) txtEmail.classList.remove('border-bottom-white');
@@ -87,7 +87,7 @@ let senhaValida = false;
     txtEmail.addEventListener('keyup', e => {
         const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-        if(regex.test(txtEmail.value) && senhaValida) {
+        if(regex.test(txtEmail.value.trim()) && senhaValida) {
             button.disabled = false;
             button.classList.remove('button-disabled')
         } else {
@@ -97,7 +97,7 @@ let senhaValida = false;
     });
 
     txtPassword.addEventListener('blur', e => {
-        if(!txtPassword.value) {
+        if(!txtPassword.value.trim()) {
             errosInputs[1].innerHTML = 'preencha a senha';
             if(errosInputs[1].classList.contains('esconder')) errosInputs[1].classList.remove('esconder');
             if(txtPassword.classList.contains('border-bottom-white')) txtPassword.classList.remove('border-bottom-white');
@@ -125,7 +125,7 @@ let senhaValida = false;
     })
 
     txtPassword.addEventListener('keyup', e => {
-        if(txtPassword.value && emailValido) {
+        if(txtPassword.value.trim() && emailValido) {
             button.disabled = false;
             button.classList.remove('button-disabled')
         } else {
@@ -140,8 +140,8 @@ let senhaValida = false;
             e.preventDefault();
 
             const usuario = {
-                email: txtEmail.value,
-                senha: txtPassword.value
+                email: txtEmail.value.trim(),
+                senha: txtPassword.value.trim()
             };
 
             let usuarioExiste = false;
