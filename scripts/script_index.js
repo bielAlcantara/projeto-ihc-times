@@ -23,6 +23,10 @@ fetch('../times.json').then(times => times.json()).then(times => {
             divNameItem.classList.remove('mouse-hover');
         });
 
+        imgLogo.addEventListener('click', e => {
+            window.location.href = `../elenco.html?time=${time.name}`;
+        });
+
         divLogoItem.appendChild(imgLogo);
 
         section.appendChild(divNameItem);
