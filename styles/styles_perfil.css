@@ -24,9 +24,9 @@ div > h1 {
 .dados-conta {
     padding: 1.25rem;
     background-color: rgb(56, 0, 58);
-    width: 30vw;
-    min-width: 25rem;
+    width: 25rem;
     overflow-wrap: break-word;
+    max-width: 90vw;
 }
 
 section {
