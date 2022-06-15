@@ -95,6 +95,11 @@ const montaTimes = (times) => {
         divNameItem.append(`${i}º - ${time.name}`);
         imgLogo.src = time.logo;
         imgLogo.alt = time.alt;
+
+        imgLogo.addEventListener('click', e => {
+            window.location.href = `../elenco.html?time=${time.name}`;
+        });
+        
         pNumEstrelas.append(time.stars);
 
         divLogoItem.appendChild(imgLogo);
@@ -147,6 +152,10 @@ const montaTimesNaoLogado = (times) => {
 
         imgLogo.addEventListener('mouseout', e => {
             divNameItem.classList.remove('mouse-hover');
+        });
+
+        imgLogo.addEventListener('click', e => {
+            window.location.href = `../elenco.html?time=${time.name}`;
         });
 
         divNameItem.append(`${i}º - ${time.name}`);

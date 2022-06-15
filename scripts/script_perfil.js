@@ -101,6 +101,10 @@ fetch('../times.json').then(times => times.json()).then(times => {
             imgLogo.src = time.logo;
             imgLogo.alt = '';
 
+            imgLogo.addEventListener('click', e => {
+                window.location.href = `../elenco.html?time=${time.name}`;
+            });
+
             divNameItem.append(time.name)
 
             divLogoItem.appendChild(imgLogo);
