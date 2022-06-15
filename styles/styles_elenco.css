@@ -14,7 +14,7 @@ main {
 }
 
 .elenco-time {
-    width: 30rem;
+    width: 29.2rem;
     height: 45.66rem;
     background-color: green;
     display: flex;
@@ -39,4 +39,5 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.75rem;
 }

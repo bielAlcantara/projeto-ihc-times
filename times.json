@@ -63,7 +63,20 @@
         "name":"Liverpool",
         "logo":"images/liverpool.webp",
         "alt":"",
-        "stars": "50345"
+        "stars": "50345",
+        "squad": {
+            "goleiro":"Alisson",
+            "latEsquerdo":"Robertson",
+            "zagEsquerdo":"Konaté",
+            "zagDireito":"Van Dijk",
+            "latDireito":"Alexander-Arnold",
+            "meiaEsquerda":"Thiago",
+            "meiaCentral":"Henderson",
+            "meiaDireita":"Keita",
+            "pontaEsquerda":"Luiz Diaz",
+            "centroavante":"Mané",
+            "pontaDireita":"Salah"
+        }
     },
     {
         "name":"Manchester City",
