@@ -21,6 +21,7 @@ main {
     flex-direction: column;
     box-shadow: 0 0 3.125rem 0.188rem rgba(56, 0, 58, 0.2);
     background: url('../images/campo.jpg');
+    margin: 1.25rem;
 }
 
 .ataque, .meio, .defesa, .gol {
