@@ -200,7 +200,8 @@ let senhaValida = false;
             const usuario = {
                 nome: txtNome.value.trim(),
                 email: txtEmail.value.trim(),
-                senha: txtPassword.value.trim()
+                senha: txtPassword.value.trim(),
+                timesFavoritados: []
             };
 
             let usuarios;

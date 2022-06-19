@@ -28,7 +28,9 @@ const montaTimes = (times) => {
         imgEstrela.src = '../images/00-star.png';
         imgEstrela.alt = 'estrela';
 
-        const timesFavoritados = JSON.parse(localStorage.getItem('timesFavoritados'));
+        const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+
+        const timesFavoritados = usuarioLogado.timesFavoritados;
 
         let achouTime = false;
 
@@ -51,7 +53,7 @@ const montaTimes = (times) => {
         });
 
         imgEstrela.addEventListener('mouseout', e => {
-            const timesFavoritados = JSON.parse(localStorage.getItem('timesFavoritados'));
+            const timesFavoritados = JSON.parse(localStorage.getItem('usuarioLogado')).timesFavoritados;
 
             let achouTime = false;
             if(timesFavoritados) achouTime = timesFavoritados.some(t => t == time.name);
@@ -61,28 +63,37 @@ const montaTimes = (times) => {
 
         imgEstrela.addEventListener('click', e => {
 
-            if(localStorage.getItem('timesFavoritados')) {
-                const timesFavoritados = JSON.parse(localStorage.getItem('timesFavoritados'));
+            if(JSON.parse(localStorage.getItem('usuarioLogado')).timesFavoritados) {
+                const timesFavoritados = JSON.parse(localStorage.getItem('usuarioLogado')).timesFavoritados;
 
                 const marcouTime = timesFavoritados.some(t => t == time.name);
 
                 if(marcouTime) {
                     const timesFavoritadosFiltrados = timesFavoritados.filter(t => t != time.name);
                     imgEstrela.classList.remove('img-star-hover');
-                    localStorage.setItem('timesFavoritados', JSON.stringify(timesFavoritadosFiltrados));
+
+                    usuarioLogado.timesFavoritados = timesFavoritadosFiltrados;
+
+                    localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
                     time.stars = (Number.parseInt(time.stars) - 1).toString();
                     pNumEstrelas.innerText = time.stars;
                 } else {
                     imgEstrela.classList.add('img-star-hover');
-                    localStorage.setItem('timesFavoritados', JSON.stringify([...timesFavoritados, time.name]));
+
+                    usuarioLogado.timesFavoritados = [...timesFavoritados, time.name];
+
+                    localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));
                     time.stars = (Number.parseInt(time.stars) + 1).toString();
                     pNumEstrelas.innerText = time.stars;
                 }
 
             } else {
                 imgEstrela.classList.add('img-star-hover');
+
+                usuarioLogado.timesFavoritados = [time.name];
+                
                 time.stars = (Number.parseInt(time.stars) + 1).toString();
-                localStorage.setItem('timesFavoritados', JSON.stringify([time.name]));                
+                localStorage.setItem('usuarioLogado', JSON.stringify(usuarioLogado));                
             }
 
             divMainContainer.innerHTML = '';

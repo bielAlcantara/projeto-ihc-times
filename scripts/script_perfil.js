@@ -47,7 +47,7 @@ if(!localStorage.getItem('usuarioLogado')) {
 fetch('../times.json').then(times => times.json()).then(times => {
 
     const divTimesFavoritados = document.querySelector('.times-favoritados');
-    const timesFavoritados = JSON.parse(localStorage.getItem('timesFavoritados'));
+    const timesFavoritados = JSON.parse(localStorage.getItem('usuarioLogado')).timesFavoritados;
 
     const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
     const divPerfilNome = document.querySelector('.perfil-nome');
