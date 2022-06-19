@@ -56,6 +56,14 @@ window.onload = () => {
     if(menuItemSair) {
         menuItemSair.addEventListener('click', e => {
 
+            const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+
+            let usuarios = JSON.parse(localStorage.getItem('usuarios'));
+
+            usuarios = usuarios.map(usuario => (usuario.email == usuarioLogado.email) ? usuarioLogado : usuario);
+
+            localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
             localStorage.removeItem('usuarioLogado')
 
             window.location.href = './index.html';
