@@ -5,6 +5,15 @@ fetch('../times.json').then(times => times.json()).then(times => {
     const objTime = times.find(time => time.name == nomeTime);
 
     const tituloTime = document.querySelector('.nome-time-titulo');
+    const logoTime = document.querySelector('.logo-time > img');
+    const imgTreinador = document.querySelector('.treinador-img');
+    const nomeTreinador = document.querySelector('.nome-treinador');
+
+    logoTime.src = objTime.logo;
+
+    nomeTreinador.innerHTML = objTime.nome_treinador;
+
+    imgTreinador.src = objTime.treinador;
 
     tituloTime.innerHTML = objTime.name;
 
