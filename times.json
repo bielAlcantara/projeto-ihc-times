@@ -2,67 +2,197 @@
     {
         "name":"Arsenal",
         "logo":"images/arsenal.png",
-        "alt":"",
-        "stars": "12345"
+        "alt":"Arsenal",
+        "stars": "12345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Aston Villa",
         "logo":"images/aston-villa.webp",
-        "alt":"",
-        "stars": "12345"
+        "alt":"Aston Villa",
+        "stars": "12345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Brentford",
         "logo":"images/brentford.webp",
-        "alt":"",
-        "stars": "12344"
+        "alt":"Brentford",
+        "stars": "12344",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Brighton",
         "logo":"images/brigthon.webp",
-        "alt":"",
-        "stars": "1345"
+        "alt":"Brighton",
+        "stars": "1345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Burnley",
         "logo":"images/burnley.webp",
-        "alt":"",
-        "stars": "145"
+        "alt":"Burnley",
+        "stars": "145",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Chelsea",
         "logo":"images/chelsea.png",
-        "alt":"",
-        "stars": "15345"
+        "alt":"Chelsea",
+        "stars": "15345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Crystal Palace",
         "logo":"images/crystal-palace.webp",
-        "alt":"",
-        "stars": "1245"
+        "alt":"Crystal Palace",
+        "stars": "1245",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Everton",
         "logo":"images/everton.webp",
-        "alt":"",
-        "stars": "1235"
+        "alt":"Everton",
+        "stars": "1235",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Leeds United",
         "logo":"images/leeds-united.webp",
-        "alt":"",
-        "stars": "2345"
+        "alt":"Leeds United",
+        "stars": "2345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Leicester City",
         "logo":"images/leicester.webp",
-        "alt":"",
-        "stars": "1345"
+        "alt":"Leicester City",
+        "stars": "1345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Liverpool",
         "logo":"images/liverpool.webp",
-        "alt":"",
+        "alt":"Liverpool",
         "stars": "50345",
         "squad": {
             "goleiro":"Alisson",
@@ -81,55 +211,159 @@
     {
         "name":"Manchester City",
         "logo":"images/man-city.png",
-        "alt":"",
-        "stars": "50345"
+        "alt":"Manchester City",
+        "stars": "50345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Manchester United",
         "logo":"images/man-united.png",
-        "alt":"",
-        "stars": "32345"
+        "alt":"Manchester United",
+        "stars": "32345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Newcastle United",
         "logo":"images/newcastle.webp",
-        "alt":"",
-        "stars": "22345"
+        "alt":"Newcastle United",
+        "stars": "22345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Norwich City",
         "logo":"images/norwich.webp",
-        "alt":"",
-        "stars": "15"
+        "alt":"Norwich City",
+        "stars": "15",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Southampton",
         "logo":"images/southhampton.webp",
-        "alt":"",
-        "stars": "145"
+        "alt":"Southampton",
+        "stars": "145",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Tottenham Hotspur",
         "logo":"images/spurs.png",
-        "alt":"",
-        "stars": "27345"
+        "alt":"Tottenham Hotspur",
+        "stars": "27345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Watford",
         "logo":"images/watford.webp",
-        "alt":"",
-        "stars": "245"
+        "alt":"Watford",
+        "stars": "245",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
-        "name":"West ham",
+        "name":"West Ham",
         "logo":"images/west-ham.webp",
-        "alt":"",
-        "stars": "9345"
+        "alt":"West Ham",
+        "stars": "9345",
+        "squad": {
+            "goleiro":"",
+            "latEsquerdo":"",
+            "zagEsquerdo":"",
+            "zagDireito":"",
+            "latDireito":"",
+            "meiaEsquerda":"",
+            "meiaCentral":"",
+            "meiaDireita":"",
+            "pontaEsquerda":"",
+            "centroavante":"",
+            "pontaDireita":""
+        }
     },
     {
         "name":"Wolverhampton",
         "logo":"images/wolves.webp",
-        "alt":"",
+        "alt":"Wolverhampton",
         "stars": "10345"
     }
 ]
