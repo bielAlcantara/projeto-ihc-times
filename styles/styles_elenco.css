@@ -30,18 +30,18 @@ main {
 }
 
 .treinador-img {
-    max-width: 25rem;
+    max-width: 20rem;
 }
 
 .logo-time {
-    width: 25rem;
+    width: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .nome-treinador {
-    max-width: 25rem;
+    max-width: 20rem;
     height: 5rem;
     width: 25rem;
     background-color: rgb(56, 0, 58);
@@ -49,7 +49,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .elenco-time {
@@ -106,4 +106,7 @@ main {
         max-width: 100vw;
     }
 
+    .defesa {
+        gap: 0.3rem;
+    }
 }
