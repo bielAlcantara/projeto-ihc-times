@@ -6,6 +6,9 @@ let senhaValida = false;
         window.location.href = './index.html'
     }
 
+    const lblNome = document.querySelector('.lbl-nome');
+    const lblEmail = document.querySelector('.lbl-email');
+    const lblPassword = document.querySelector('.lbl-password');
     const txtNome = document.querySelector('.nome > input');
     const txtEmail = document.querySelector('.email > input');
     const txtPassword = document.querySelector('.password > input');
@@ -45,6 +48,7 @@ let senhaValida = false;
     });
 
     txtNome.addEventListener('blur', e => {
+        lblNome.style.color = "white";
         const regex = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
 
         if(!txtNome.value.trim()) {
@@ -83,6 +87,7 @@ let senhaValida = false;
     });
     
     txtNome.addEventListener('focus', e => {
+        lblNome.style.color = "rgb(5, 241, 255)";
         txtNome.classList.add('border-bottom-white');
         errosInputs[0].classList.add('esconder');
     })
@@ -100,6 +105,7 @@ let senhaValida = false;
     });
 
     txtEmail.addEventListener('blur', e => {
+        lblEmail.style.color = "white";
         const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
         if(!txtEmail.value.trim()) {
@@ -138,6 +144,7 @@ let senhaValida = false;
     });
     
     txtEmail.addEventListener('focus', e => {
+        lblEmail.style.color = "rgb(5, 241, 255)";;
         txtEmail.classList.add('border-bottom-white');
         errosInputs[1].classList.add('esconder');
     })
@@ -155,6 +162,7 @@ let senhaValida = false;
     });
 
     txtPassword.addEventListener('blur', e => {
+        lblPassword.style.color = "white";
         if(!txtPassword.value.trim()) {
             errosInputs[2].innerHTML = 'preencha a senha';
             if(errosInputs[2].classList.contains('esconder')) errosInputs[2].classList.remove('esconder');
@@ -178,6 +186,7 @@ let senhaValida = false;
     });
 
     txtPassword.addEventListener('focus', e => {
+        lblPassword.style.color = "rgb(5, 241, 255)";
         txtPassword.classList.add('border-bottom-white');
         errosInputs[2].classList.add('esconder');
     })

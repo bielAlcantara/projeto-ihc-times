@@ -5,6 +5,8 @@ let senhaValida = false;
         window.location.href = './index.html'
     }
 
+    const lblEmail = document.querySelector('.lbl-email');
+    const lblPassword = document.querySelector('.lbl-password');
     const txtEmail = document.querySelector('.email > input');
     const txtPassword = document.querySelector('.password > input');
     const errosInputs = document.querySelectorAll('.erro-input');
@@ -42,6 +44,7 @@ let senhaValida = false;
     });
 
     txtEmail.addEventListener('blur', e => {
+        lblEmail.classList.remove('color-blue');
         const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
         if(!txtEmail.value.trim()) {
@@ -80,6 +83,7 @@ let senhaValida = false;
     });
     
     txtEmail.addEventListener('focus', e => {
+        lblEmail.classList.add('color-blue');
         txtEmail.classList.add('border-bottom-white');
         errosInputs[0].classList.add('esconder');
     })
@@ -97,6 +101,7 @@ let senhaValida = false;
     });
 
     txtPassword.addEventListener('blur', e => {
+        lblPassword.classList.remove('color-blue');
         if(!txtPassword.value.trim()) {
             errosInputs[1].innerHTML = 'preencha a senha';
             if(errosInputs[1].classList.contains('esconder')) errosInputs[1].classList.remove('esconder');
@@ -120,6 +125,7 @@ let senhaValida = false;
     });
 
     txtPassword.addEventListener('focus', e => {
+        lblPassword.classList.add('color-blue');
         txtPassword.classList.add('border-bottom-white');
         errosInputs[1].classList.add('esconder');
     })

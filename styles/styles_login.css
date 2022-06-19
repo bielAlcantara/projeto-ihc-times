@@ -134,6 +134,10 @@ form input:focus {
     border-bottom: 0.094rem solid rgb(5, 241, 255);
 }
 
+.color-blue {
+    color: rgb(5, 241, 255);
+}
+
 button {
     width: 80%;
     height: 3.75rem;
